@@ -9,6 +9,7 @@ from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import NoSuchElementException
+from webdriver_manager.chrome import ChromeDriverManager as CM
 
 PROXY = "3.88.169.225:80"
 
@@ -29,7 +30,7 @@ def youtube_login(email,password):
 	op.add_argument("--disable-extensions")
 	# op.add_argument('--proxy-server=%s' % PROXY)
 	# op.add_argument("--proxy-bypass-list=*")
-	driver = webdriver.Chrome(options=op, executable_path= 'chromedriver.exe')
+	driver = webdriver.Chrome(options=op, executable_path=CM().install())
 	driver.execute_script("document.body.style.zoom='80%'")
 	driver.get('https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252F&hl=en&ec=65620')
 
