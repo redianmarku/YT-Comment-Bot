@@ -7,6 +7,6 @@ numpy
 requests==2.24.0
 selenium==3.141.0
 soupsieve==2.0.1
-spintax==1.0.4
+spintax
 urllib3==1.25.9
 webdriver_manager
