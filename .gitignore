@@ -2,3 +2,6 @@
 \venv
 \environement
 .db
+.vscode
+__pycache__
+.pyc
