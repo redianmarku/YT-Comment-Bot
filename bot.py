@@ -41,7 +41,7 @@ def youtube_login(email, password):
     # op.add_argument("--proxy-bypass-list=*")
     driver = webdriver.Chrome(options=op, executable_path=CM().install())
     driver.execute_script("document.body.style.zoom='80%'")
-    driver.get('https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?client_id=717762328687-iludtf96g1hinl76e4lc1b9a82g457nn.apps.googleusercontent.com&scope=profile%20email&redirect_uri=https%3A%2F%2Fstackauth.com%2Fauth%2Foauth2%2Fgoogle&state=%7B%22sid%22%3A1%2C%22st%22%3A%2259%3A3%3Abbc%2C16%3Ae708db9d699def1c%2C10%3A1618252199%2C16%3A52a37fab3c40bea4%2C3fd6bc7a2c8ebd102807def43ae7b27029312b9700f734d623d0b33c36324f3a%22%2C%22cdl%22%3Anull%2C%22cid%22%3A%22717762328687-iludtf96g1hinl76e4lc1b9a82g457nn.apps.googleusercontent.com%22%2C%22k%22%3A%22Google%22%2C%22ses%22%3A%22d17f98929e7240a2956f6f6e9fbbf928%22%7D&response_type=code&flowName=GeneralOAuthFlow')
+    driver.get('https://accounts.google.com/signin/v2/identifier?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252F&hl=en&ec=65620&flowName=GlifWebSignIn&flowEntry=ServiceLogin')
 
     print("=============================================================================================================")
     print("Google Login")
