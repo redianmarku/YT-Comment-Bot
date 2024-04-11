@@ -2,7 +2,7 @@ beautifulsoup4==4.9.1
 bs4==0.0.1
 certifi==2022.12.7
 chardet==3.0.4
-idna==2.10
+idna==3.7
 numpy
 requests==2.24.0
 selenium==3.141.0
